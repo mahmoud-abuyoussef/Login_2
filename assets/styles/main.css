@@ -5,12 +5,19 @@
 }
 :root {
   --black: black;
+  --stroke: #878787;
+  --gray: #ababab;
+  --white: white;
+  --input-strok: #282828;
 }
 body {
   font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 .container {
   padding: 0 15px;
@@ -38,4 +45,102 @@ header a {
   font-size: 20px;
   font-weight: 600;
   color: var(--black);
+}
+section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  section .container {
+    justify-content: center;
+  }
+  section .form {
+    width: 100%;
+  }
+}
+section .form {
+  width: 50%;
+  padding: 41px;
+  border: 0.5px solid var(--stroke);
+  border-radius: 10px;
+}
+section .welcome-message {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 300;
+}
+section h1 {
+  font-size: 31px;
+  font-weight: 500;
+}
+section .desription {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section form {
+  width: 100%;
+}
+section form label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: 400;
+}
+section form input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  border: 0.6px solid var(--input-strok);
+  border-radius: 6px;
+}
+section form input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray);
+}
+section form .options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section form .options label {
+  display: inline;
+}
+section form .options input {
+  display: inline;
+  width: fit-content;
+  margin: 0;
+}
+section form .options a {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--gray);
+}
+section .have-an-accout {
+  color: var(--gray);
+}
+section .have-an-accout a {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+}
+section form .submit-btn {
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 16px;
+  font-weight: 500;
+}
+section .image {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  section .image {
+    display: none;
+  }
 }

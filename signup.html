@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Sign in</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,5 +12,37 @@
     />
     <link rel="stylesheet" href="assets/styles/main.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">Your Logo</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="form">
+            <span class="welcome-message">Welcome !</span>
+            <h1>Sign Up to</h1>
+            <p class="desription">Lorem Ipsum is simply</p>
+            <form method="post">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required autofocus />
+              <label for="username">User name</label>
+              <input type="text" id="username" name="username" placeholder="Enter your user name" required autofocus />
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required />
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required />
+              <input type="submit" value="Register" class="submit-btn" />
+            </form>
+            <p class="have-an-accout">Do you have an account? <a href="signup.html">Login</a></p>
+          </div>
+          <div class="image">
+            <img src="assets/images/small-team.png" alt="small team" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
